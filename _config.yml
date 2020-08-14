@@ -6,8 +6,10 @@
 title: "ENGL 460: The Blog"
 # Short bio or description (displayed in the header)
 description: The course blog for ENGL 460 at Texas A&M
-theme: jekyll-theme-minimal
 semester: fall2020
+author:
+  name: Andrew Pilsch
+  url: http://andrew.pilsch.com
 
 show_downloads: false
 

@@ -1,18 +1,16 @@
 ---
 layout: default
 ---
-<div class="posts">
-  {% for post in site.posts %}
-  {% unless post.categories contains site.semester %}continue{%endunless%}
-  <article class="post">
+{% assign semester_posts = site.posts | where_exp: "post", "post.categories contains site.semester" %}
+{% for post in semester_posts %}
+<article{% if forloop.first %} class="mt5" {%endif%}>
 
-    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-    <div class="entry">
-      {{ post.excerpt }}
-    </div>
+  <div>
+    {{ post.excerpt }}
+  </div>
 
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+  <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
   </article>
   {% endfor %}
-</div>

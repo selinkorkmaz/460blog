@@ -1,0 +1,22 @@
+a {
+  color: #137752;
+  text-decoration: none;
+}
+
+/* a, */
+/* a:active, */
+/* a:focus, */
+/* a:hover, */
+/* a:link, */
+/* a:visited { */
+/*   transition: color 0.15s ease-in; */
+/* } */
+
+a:focus,
+a:hover {
+  color: #19a974;
+}
+
+.buttons a {
+  transition: none;
+}
