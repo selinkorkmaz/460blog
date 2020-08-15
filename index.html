@@ -1,16 +1,7 @@
 ---
-layout: default
+layout: home
 ---
 {% assign semester_posts = site.posts | where_exp: "post", "post.categories contains site.semester" %}
 {% for post in semester_posts %}
-<article{% if forloop.first %} class="mt5" {%endif%}>
-
-  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-  <div>
-    {{ post.excerpt }}
-  </div>
-
-  <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
-  </article>
-  {% endfor %}
+{% include post_block.html %}
+{% endfor %}

@@ -1,13 +1,11 @@
 ---
 title: Course Blogs
-layout: default
+layout: page
 ---
-<article class="mt5 center">
-  <h1>Course Blogs for ENGL 460</h1>
-  <p>Below is a list of the course blogs for ENGL 460 this semester.</p>
-  <ul class="buttons list pl0 ml0 center mt4">
-    {% for url in site.data[site.semester].blogs %}
-    <li><a class="f3 db tc ph3 pv2 bl br bb b--light-silver b--light-silver{% if forloop.first or forloop.last %} br3{%endif%}{%if forloop.first %} bt{% endif %}{% if forloop.last and forloop.first != true %} br--bottom{%endif%}{%if forloop.first and forloop.last != true %} br--top{%endif%} hover-white hover-bg-green" href="{{url}}">{{url}}</a></li>
-    {% endfor %}
-  </ul>
-</article>
+<h1>Course Blogs for ENGL 460</h1>
+<p>Below is a list of the course blogs for ENGL 460 this semester.</p>
+<ul>
+  {% for url in site.data[site.semester].blogs %}
+  <li><a href="{{url}}">{{url}}</a></li>
+  {% endfor %}
+</ul>
