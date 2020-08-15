@@ -7,11 +7,15 @@ title: "ENGL 460: The Blog"
 # Short bio or description (displayed in the header)
 description: The course blog for ENGL 460 at Texas A&M
 semester: fall2020
+theme: jekyll-swiss
+theme_color: white
+
+github_user: oncomouse
+github_repo: 460blog
+
 author:
   name: Andrew Pilsch
   url: http://andrew.pilsch.com
-theme: jekyll-swiss
-theme_color: white
 
 show_downloads: false
 
