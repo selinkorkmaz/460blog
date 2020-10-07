@@ -2,7 +2,7 @@
 title: Semesterly Recap Over Week 7
 author:
   name: "@kmaclin17"
-  url: "kmaclin17.github.io/"
+  url: "https://kmaclin17.github.io/"
 categories:
 - recap
 - fall2020
